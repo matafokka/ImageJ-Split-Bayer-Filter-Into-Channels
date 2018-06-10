@@ -109,7 +109,7 @@ else
 
 function split(ip, name, xstart, ystart) 
 {
-    var imp2 = IJ.createImage(name, ImagePlus.getBitDepth + "-bit", w / 2, h / 2, 1);
+    var imp2 = IJ.createImage(name, ip.getBitDepth + "-bit", w / 2, h / 2, 1);
     var ip2 = imp2.getProcessor();
     var i = 0;
     for (var y = ystart; y < h; y += 2)
